@@ -269,3 +269,63 @@ node server.js
 ```
 
 The server will be running on port 3000, and you can access the API using the specified endpoints.
+
+## RESTful API
+## Get All Locations:
+
+https://lokis-app-tourism-ghggrfpakq-uc.a.run.app/location
+Explanation: Returns data for all locations.
+Search Locations:
+
+https://lokis-app-tourism-ghggrfpakq-uc.a.run.app/location/search?q=<searchTerm>
+Explanation: Searches for locations based on the provided query parameter q, which can be a name, city, or category.
+Get Locations by City:
+
+https://lokis-app-tourism-ghggrfpakq-uc.a.run.app/location/city=<city>
+Explanation: Returns data for all locations in the specified city.
+Get Locations by Category:
+
+https://lokis-app-tourism-ghggrfpakq-uc.a.run.app/location/category=<category>
+Explanation: Returns data for all locations in the specified category.
+Get Locations by Rating:
+
+https://lokis-app-tourism-ghggrfpakq-uc.a.run.app/location/rating=<rating>
+Explanation: Returns data for all locations with the specified rating.
+Get Locations by Price:
+
+https://lokis-app-tourism-ghggrfpakq-uc.a.run.app/location/price=<price>
+Explanation: Returns data for all locations with the specified price.
+Get Locations by Name:
+
+https://lokis-app-tourism-ghggrfpakq-uc.a.run.app/location/name=<name>
+Explanation: Returns data for the location with the specified name.
+Get Locations by City and Rating:
+
+https://lokis-app-tourism-ghggrfpakq-uc.a.run.app/location/city=<city>&rating=<rating>
+Explanation: Returns data for all locations in the specified city with the specified rating.
+Get Recommended Locations for a City (Rating between 4.5 and 5):
+
+## Get Recommendations for All Cities with Ratings Between 4.4 and 5:
+
+https://lokis-app-tourism-ghggrfpakq-uc.a.run.app/recommendations/cities/rating
+Explanation: Returns recommendations for all cities where the rating is between 4.4 and 5.
+Get Recommendations for Jakarta:
+
+https://lokis-app-tourism-ghggrfpakq-uc.a.run.app/recommendations/cities/Depok
+Explanation: Returns recommendations for Jakarta where the rating is between 4.4 and 5.
+Get Recommendations for Bogor:
+
+https://lokis-app-tourism-ghggrfpakq-uc.a.run.app/recommendations/cities/Bogor
+Explanation: Returns recommendations for Bogor where the rating is between 4.4 and 5.
+Get Recommendations for Depok:
+
+https://lokis-app-tourism-ghggrfpakq-uc.a.run.app/recommendations/cities/Depok
+Explanation: Returns recommendations for Depok where the rating is between 4.4 and 5.
+Get Recommendations for Tangerang:
+
+https://lokis-app-tourism-ghggrfpakq-uc.a.run.app/recommendations/cities/Tangerang
+Explanation: Returns recommendations for Tangerang where the rating is between 4.4 and 5.
+Get Recommendations for Bekasi:
+
+https://lokis-app-tourism-ghggrfpakq-uc.a.run.app/recommendations/cities/Bekasi
+Explanation: Returns recommendations for Bekasi where the rating is between 4.4 and 5
